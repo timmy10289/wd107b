@@ -1,0 +1,52 @@
+h1{text-align:center;}
+	h1 {color:#00ff00;}
+	h1 {text-shadow:2px 2px #9966FF;}
+body{text-align:center;}
+	body{color:green;}
+	body{text-shadow:0 0 1px #66FFCC;}
+p.date {text-align:right;}
+p.main {text-align:justify;}
+a {text-decoration:none;}
+	body
+	{
+		background-image:url('http://img1.oldkids.cn/upload/260805000/u260804222/2014/05/25/blog_20140525124403189594.gif');
+	background-color:#cccccc;
+	}
+	
+	.tooltip 
+	{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext 
+	{
+    visibility: hidden;
+    width: 120px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+	}
+
+	.tooltip .tooltiptext::after 
+	{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+	}
+	.tooltip:hover .tooltiptext 
+	{
+    visibility: visible;
+	}
