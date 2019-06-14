@@ -6,85 +6,86 @@
 <style>
 * {
   box-sizing: border-box;
-}
+  }
 
-body {
+body 
+{
   margin: 0;
 }
 
-/* 头部样式 */
-.header {
+.header /* 頭部 */
+{
   background-color: #f1f1f1;
   padding: 20px;
-  text-align:left;
-  
+  text-align:left; 
 }
-
-/* 导航条 */
-.topnav {
+	
+.topnav /* 导航条 */
+{
   overflow: hidden;
   background-color: #333;
 }
 
-/* 导航链接 */
-.topnav a {
+.topnav a /* 导航链接 */
+{
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-	
+  text-decoration: none;	
 }
 
-/* 链接 - 修改颜色 */
-.topnav a:hover {
+.topnav a:hover/* 链接 - 修改颜色 */ 
+{
   background-color: #ddd;
   color: black;
 }
 
-/* 创建三个不相等的列 */
-.column {
+.column /* 创建三个不相等的列 */
+{
   float: left;
   padding: 10px;
 }
 
-/* 左右两侧宽度 */
-.column.side {
+.column.side /* 左右两侧宽度 */
+{
   width: 25%;
 }
 
-/* 中间区域宽度 */
-.column.middle {
+.column.middle /* 中间区域宽度 */
+{
   width: 50%;
 }
 
-/* 列后面清除浮动 */
-.row:after {
+
+.row:after /* 列后面清除浮动 */
+{
   content: "";
   display: table;
   clear: both;
 }
 
-/* 响应式布局 - 宽度小于600px时设置上下布局 */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+@media screen and (max-width: 600px) /* 响应式布局 - 宽度小于600px时设置上下布局 */
+{
+ .column.side, .column.middle 
+  {
     width: 100%;
   }
 }
 	
-	.navbar a {
+ .navbar a 
+{
   float: left;
   font-size: 16px;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-
+}	
 	
-	
-.sidebar {
+.sidebar 
+{
   position: fixed;
   top: 238px;/*左側欄上方與頂部的距離*/
   left: 0px;/*左側欄與左邊的距離*/
@@ -96,28 +97,35 @@ body {
   padding: 10px 5px;
   white-space:nowrap;
 }
-.sidebar a {
+.sidebar a 
+{
   color: white;/*文字顏色*/
   text-decoration: none;
 }
-.sidebar li, .sidebar ul {
+.sidebar li, .sidebar ul
+{
   list-style-type: none;
   margin: 5px 10px;
   padding: 5px;
 }
-.sidebar {
+.sidebar 
+{
   transition: width 1s;/*左側欄幾秒後會完全展開*/
  }
-.sidebar a:hover {
+.sidebar a:hover 
+{
   color: yellow;/*左側欄上面的字被滑鼠碰到時會變的顏色*/
 }
-.sidebar:hover {
+.sidebar:hover 
+{
   width: 150px;/*左側欄的寬*/ 
 }
 	
-	@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) 
+{
     /* 在手機上 */
-    .sidebar {
+    .sidebar 
+    {
         width: 10px;/*在手機上左側欄的寬*/
     }
 }
@@ -136,13 +144,10 @@ li a.active /*激活*/
 <div class="header">
   <h1>
   <img border="0" src="https://cdn140.picsart.com/281422771031211.png?r1024x1024" alt="Pulpit rock" width="120" height="100">
-   </h1>
-	 
-  
-  
+  </h1>
 </div>
 
-	<div class="sidebar">
+<div class="sidebar">
  <ul>
  <li><a href="https://timmy10289.github.io/wd107b/final2.html">團員介紹</a></li>
  <li><a href="https://timmy10289.github.io/wd107b/final3.html">熱門歌曲</a></li>
@@ -153,34 +158,19 @@ li a.active /*激活*/
 <div class="topnav">
   <a href="#home">主頁</a>
   <a href="https://timmy10289.github.io/wd107b/ex.6.html">我的資料</a>
-  <a href="https://www.instagram.com/timmy10289/">我的 IG</a>
-	
-
-	
+  <a href="https://www.instagram.com/timmy10289/">我的 IG</a>	
 </div>
 
-	<div class="column side">
-		
-  </div>
+<div class="column side">		
+</div>
 
   
-  <div class="column middle">
-    <h2>
-		Mrs.Green Apple
-	</h2>
-	  <img border="0" src="http://1.bp.blogspot.com/--16mXqUt6dk/VhPi0OgTABI/AAAAAAAAG_s/7etnLzPbUn0/s1600/1506_cake02.jpg" alt="Pulpit rock" width="400" height="200">
-	  <p>2013年結成的日本樂團，2015年由 環球音樂旗下的EMI Records出道</p>
-      <a href="https://timmy10289.github.io/wd107b/final2.html#" target="_blank">看更多...</a>
-
-	</div>
-  
-  <div class="column side">
-	  <h2></h2>
-  </div>
-	
-	
-
-
-
+<div class="column middle">
+  <h2>Mrs.Green Apple</h2>
+  <img border="0" src="http://1.bp.blogspot.com/--16mXqUt6dk/VhPi0OgTABI/AAAAAAAAG_s/7etnLzPbUn0/s1600/1506_cake02.jpg" alt="Pulpit rock" width="400" height="200">
+  <p>2013年結成的日本樂團，2015年由 環球音樂旗下的EMI Records出道</p>
+  <a href="https://timmy10289.github.io/wd107b/final2.html#" target="_blank">看更多...</a>
+</div>
+ 
 </body>
 </html>
